@@ -2,9 +2,12 @@
 <html lang="en">
 <head>
   <title>Mr Robot!</title>
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" type="text/css" />
+    <script src="script/script.js"></script>
+    <meta charset="utf-8">
   </head>
-<body>
+  <body font-family: 'Source Sans Pro', sans-serif;>
   <header>
       <div>
           <a class="headerlogo" href="index.html">
@@ -26,7 +29,7 @@
   </header>
 
 <fieldset>
-<legend>Mr. Robot's Top Robot Models</legend>
+<legend>Mr. Robot's Top Robot Models qQ</legend>
 
 <ul>
 <li >
@@ -89,25 +92,6 @@
              <div>Address</div>
      </template>
 </template>
-<script>
-  var robo = document.querySelector('#robo1').createShadowRoot();
-  /*Step1*/
-  let prdTemplate = document.querySelector('#producttemplate');
-  /*Step2*/
-  let clone = document.importNode(prdTemplate.content, true);
-  /*Step3*/
 
-  clone.querySelector('#pimage').src = 'images/roboDog.png';
-  clone.querySelector('#lblName').textContent = 'R.E.T';
-
- /*Step4*/
-  robo.appendChild(clone);
-  let userTemplate = document.querySelector('#user');
-  let userClone = document.importNode(userTemplate.content, true);
-  document.body.appendChild(userClone);
-    let addressTemplate = document.querySelector('#address');
-    let addressClone = document.importNode(addressTemplate.content, true);
-  document.body.appendChild(addressClone);
-</script>
 </body>
 </html>

@@ -1,0 +1,49 @@
+.parallax-img1 {
+    /* The image used */
+    background-image: url("../images/Mr.-Robot-Welcome.png");
+
+    /* Set a specific height */
+    height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax-img2 {
+    /* The image used */
+    background-image: url("../images/welcome.jpg");
+
+    /* Set a specific height */
+    height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #f3f3f3;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #666;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.topnav a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+.topnav a.active {
+    color: white;
+    background-color: #4CAF50;
+}
