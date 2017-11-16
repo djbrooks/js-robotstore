@@ -1,3 +1,82 @@
+.topbar {
+    overflow: hidden;
+    background-color: #f3f3f3;
+    position: fixed;
+    top: 0;
+    vertical-align: bottom;
+    width: 100%;
+}
+
+.topbar a {
+    float: left;
+    display: block;
+    color: #666;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.6em;
+}
+
+.topbar a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+.topbar a.active {
+    color: white;
+    background-color: #4CAF50;
+}
+.myLogo {
+    width: 180px;
+    border: 0px;
+    padding: 0px;
+    height:180px;
+    margin: 0px 0px;
+}
+
+#topbar input{
+    vertical-align:middle;
+}
+#topbar.searchbox {
+    vertical-align:middle;
+}
+
+.searchbox {
+    margin: auto;
+    text-align: right;
+
+}
+
+/* Two column layout that float next to each other by Matthew James Taylor
+ * http://matthewjamestaylor.com/blog/equal-height-columns-2-column.htm"
+ */
+#container2 {
+	clear:left;
+	float:left;
+	width:100%;
+	overflow:hidden;
+}
+#container1 {
+	float:left;
+	width:100%;
+	position:relative;
+	right:50%;
+}
+#col1 {
+	float:left;
+	width:46%;
+	position:relative;
+	left:52%;
+	overflow:hidden;
+}
+#col2 {
+	float:left;
+	width:46%;
+	position:relative;
+	left:56%;
+	overflow:hidden;
+}
+/* Two column layout end. */
+
 .parallax-img1 {
     /* The image used */
     background-image: url("../images/Mr.-Robot-Welcome.png");
@@ -28,6 +107,10 @@
 .topnav {
     overflow: hidden;
     background-color: #f3f3f3;
+    position: fixed;
+    top: 0;
+    vertical-align: bottom;
+    width: 100%;
 }
 
 .topnav a {
@@ -37,6 +120,7 @@
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    font-size: 1.6em;
 }
 
 .topnav a:hover:not(.active) {
