@@ -1,53 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Mr Robot!</title>
-  <link href="https://fonts.googleapis.com/css?family=Kalam" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" type="text/css" />
-    <script src="script/script.js"></script>
-    <meta charset="utf-8">
-  </head>
-  <body font-family: 'Kalam', cursive;>
-    <header>
-        <div>
-            <a class="headerlogo" href="index.html">
-                <img src="images/logo.jpg" />
-            </a>
-            <span id="headername">Mr. Robot</span>
-            <input type="search" class="searchbox" placeholder="Search our store" />
-        </div>
+    <head>
+        <title>Mr Robot!</title>
+        <meta charset="utf-8">
+        <!--
+        <link href="https://fonts.googleapis.com/css?family=Kalam" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" type="text/css" />
+    <body font-family: 'Kalam', cursive; onload="roboPageBuild('roboGreenAbout')">
+        -->
+        <link rel="stylesheet" href="style/robot.css" type="text/css" />
+        <link rel="stylesheet" href="w3css/4/w3.css" type="text/css">
+    </head>
+    <!-- Pass roboGreenAbout so navbar shows correct active page. -->
+    <body style="font-family: Verdana, Times, cursive" onload="roboPageBuild('roboGreenAbout')">
+        <!-- navbar START -->
+        <div id="nav" class="w3-bar w3-top roboBackColor"></div>
+        <!-- navbar END -->
+            <div class="roboStartHere">
 
-        <nav class="backgroundgradient">
-            <ul>
-              <li><a class="navlink" href="index.html">Home</a></li>
-              <li><a class="navlink" href="robots.html">Robots</a></li>
-              <li><a class="navlink" href="computers.html">Hardware</a></li>
-              <li><a class="navlink" href="contact.html">Contact</a></li>
-              <li><a class="navlink" href="about.html">About</a></li>
-            </ul>
-        </nav>
-    </header>
-  <div id="welcomeimage">
-    <img src="images/Mr.-Robot-Welcome.png" height="400px" alt="About us">
-  </div>
-    <fieldset>
-      <legend>Our History</legend>
-        <p>
+      <h1>Our History</h1>
 
         <h5><strong>Mr. Robot</strong> <br>Our goal is to creat the best Robots money can buy.</h5>
-Elliott Alderson  started the company back in 2019 after the crash of evil Corp in order to try and restore order in the world through the helping hands of Robots.  Our store is located in downtown Moon City right next to the Cheesecake Factory.<br>
+        <p>
+        Elliott Alderson  started the company back in 2019 after the crash of evil Corp in order to try and restore order in the world through the helping hands of Robots.  Our store is located in downtown Moon City right next to the Cheesecake Factory.</p>
+        <p>
 Hope to see you soon!
         </p>
 
-    </fieldset>
-
-    <script >
-
-    </script>
-  </body>
-  <footer>
-    <p>Our address is <address>1011 Crater Ave, Moon City: THE MOON</address></p>
-    <p class="textcontent">All site contents is copyright <a class="mainlink" href="http://www.mrrobot.com">Mr Robot!</a></p>
-    <p class="smalltext">This page was generated on <time>09:25:04.123</time>.</p>
-  </footer>
+        <footer id="roboFooter" class="w3-center"></footer>
+            </div>
+        <script type="text/javascript" src="script/script.js"></script>
+    </body>
 </html>

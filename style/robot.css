@@ -1,85 +1,85 @@
-.topbar {
-    overflow: hidden;
-    background-color: #f3f3f3;
-    position: fixed;
-    top: 0;
-    vertical-align: bottom;
-    width: 100%;
+.roboBackColor {
+    background-color: white;
+    position: absolute;
 }
 
-.topbar a {
-    float: left;
-    display: block;
-    color: #666;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 1.6em;
-}
-
-.topbar a:hover:not(.active) {
-    background-color: #ddd;
-}
-
-.topbar a.active {
-    color: white;
-    background-color: #4CAF50;
-}
-.myLogo {
+.roboLogo {
     width: 180px;
-    border: 0px;
-    padding: 0px;
-    height:180px;
-    margin: 0px 0px;
+    height: 180px;
 }
 
-#topbar input{
-    vertical-align:middle;
-}
-#topbar.searchbox {
-    vertical-align:middle;
-}
-
-.searchbox {
-    margin: auto;
+.roboSearchBox {
     text-align: right;
-
+    border: 1px solid black;
 }
+
+.roboWelcomeWave {
+    text-align: center;
+}
+
+.roboTopRight {
+    position: absolute;
+    right: 0px;
+}
+
+.roboStartHere {
+    position: relative;
+    top: 180px;
+    margin: 10px;
+}
+
+.robo1LinkStartHere {
+    position: relative;
+    top: 1580px;
+}
+
+.robo2LinkStartHere {
+    position: relative;
+    top: 80px;
+}
+
+.robo3LinkStartHere {
+    position: relative;
+    top: 80px;
+}
+
 
 /* Two column layout that float next to each other by Matthew James Taylor
  * http://matthewjamestaylor.com/blog/equal-height-columns-2-column.htm"
+ * Cool thing is the horizontal top alignment. Neat!
  */
-#container2 {
-	clear:left;
-	float:left;
-	width:100%;
-	overflow:hidden;
+#containerTwo {
+	clear: left;
+	float: left;
+	width: 100%;
+	overflow: hidden;
 }
-#container1 {
-	float:left;
-	width:100%;
-	position:relative;
-	right:50%;
+#containerOne {
+	float: left;
+	width: 100%;
+	position: relative;
+	right: 50%;
 }
-#col1 {
-	float:left;
-	width:46%;
-	position:relative;
-	left:52%;
-	overflow:hidden;
+#colOne {
+	float: left;
+	width: 46%;
+	position: relative;
+	left: 52%;
+	overflow: hidden;
 }
-#col2 {
-	float:left;
-	width:46%;
-	position:relative;
-	left:56%;
-	overflow:hidden;
+#colTwo {
+	float: left;
+	width: 46%;
+	position: relative;
+	left: 56%;
+	overflow: hidden;
 }
 /* Two column layout end. */
 
-.parallax-img1 {
+.parallax-imgOne {
     /* The image used */
     background-image: url("../images/Mr.-Robot-Welcome.png");
+    text-align: center;
 
     /* Set a specific height */
     height: 500px; 
@@ -90,44 +90,16 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-.parallax-img2 {
+.parallax-imgTwo {
     /* The image used */
     background-image: url("../images/welcome.jpg");
 
     /* Set a specific height */
-    height: 500px; 
+    height: 300px; 
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-.topnav {
-    overflow: hidden;
-    background-color: #f3f3f3;
-    position: fixed;
-    top: 0;
-    vertical-align: bottom;
-    width: 100%;
-}
-
-.topnav a {
-    float: left;
-    display: block;
-    color: #666;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 1.6em;
-}
-
-.topnav a:hover:not(.active) {
-    background-color: #ddd;
-}
-
-.topnav a.active {
-    color: white;
-    background-color: #4CAF50;
 }

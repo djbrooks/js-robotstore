@@ -1,45 +1,41 @@
-  var robo = document.querySelector('#robo1').createShadowRoot();
-  /*Step1*/
-  let prdTemplate = document.querySelector('#producttemplate');
-  /*Step2*/
-  let clone = document.importNode(prdTemplate.content, true);
-  /*Step3*/
+function buildFooter() {
+    let d = new Date();
+    let f="<img src='images/robot-waving-animated-gif-clr.gif'/>                            <h2>Thank you for visiting!</h2>                                                <address><a href='https://www.google.com/moon/' target='_blank'>1011 Crater Ave, Moon City: THE MOON</a></address>                                              All site contents is copyright <a href='http://www.mrrobot.com' target='_blank'>Mr Robot!</a>                                                                   <br><time>Generated on: " + d + "</time><br>";
 
-  clone.querySelector('#pimage').src = 'images/roboDog.png';
-  clone.querySelector('#lblName').textContent = 'R.E.T';
+    document.getElementById("roboFooter").innerHTML = f;
+}
 
- /*Step4*/
-  robo.appendChild(clone);
-  let userTemplate = document.querySelector('#user');
-  let userClone = document.importNode(userTemplate.content, true);
-  document.body.appendChild(userClone);
-    let addressTemplate = document.querySelector('#address');
-    let addressClone = document.importNode(addressTemplate.content, true);
-  document.body.appendChild(addressClone);
+// DJBHERE DJB HERE: Why can't this be its own function???
+// function roboNavbar(p)
+//
+function roboPageBuild(p) {
+    let ap = p; // Active/current page so navbar item is highlighted
 
-      /* TODO: Move To js file */
-      /*********************************************************
-       *
-       *   Test Checkboxes/Radio Buttons Script
-       *
-       *********************************************************/
-       // loop through each form and handle submit event
-       for (var i=0;i<document.forms.length;i++) {
-         var form = document.forms[i];
-         form.addEventListener('submit', function(e){
-           e.preventDefault();
-           var results = '';
-          // loop through all checkboxes to see if checked
-          var checkboxes = form.querySelectorAll("input[type='checkbox']");
-          for(var k = 0; k < checkboxes.length; k++) {
-            results += checkboxes[k].id + '=' + checkboxes[k].checked + '\n';
-          }
-          // loop through all radio butotns to display value
-          var radiobuttons = form.querySelectorAll("input[type='radio']:checked");
-          for(var m = 0; m < radiobuttons.length; m++) {
-            results += radiobuttons[m].name + '=' + radiobuttons[m].value + '\n';
-          }
-          // alert results
-          alert(results);
-        });
-      }
+    /* Build dynamic navBar. roboGreeen.... gets set to w3-green based
+     * upon passed in active/current page arg.
+     */
+    
+    let logoSmall="<a href='index.html'><img class='w3-bar-item w3-cell-top roboLogo' src='images/logoSmall.png'></a>";
+    let home= "<a href='index.html' class='w3-bar-item w3-btn roboGreenIndex'>Home</a>";
+    let specs="<a href='specs.html' class='w3-bar-item w3-btn roboGreenSpecs'>Specs</a>";
+    let robots="<div class='w3-dropdown-hover w3-hide-small roboGreenRobots'>                               <button class='w3-btn'><a href='robots'>Robots</a></button>                     <div class='w3-dropdown-content w3-bar-block w3-card-4'>                        <a href='robots.html#robo1LinkStartHere' class='w3-bar-item w3-btn'>R.E.T</a>            <a href='robots.html#robo2LinkStartHere' class='w3-bar-item w3-btn'>Butler.Bot</a>       <a href='robots.html#robo3LinkStartHere' class='w3-bar-item w3-btn'>Mega Man</a>         </div>                                                                          </div>";
+    let hardware="<a href='hardware.html' class='w3-bar-item w3-btn roboGreenHardware'>Hardware</a>";
+    let contact="<a href='contact.html' class='w3-bar-item w3-btn roboGreenContact'>Contact</a>";
+    let about="<a href='about.html' class='w3-bar-item w3-btn roboGreenAbout'>About</a>";
+    let searchBox="<input type='text' class='w3-bar-item w3-input w3-round w3-display-topright' placeholder='Search our store'>";
+    let goText="<a href='#' class='w3-bar-item w3-btn w3-cell-top w3-green roboTopRight'>Go</a>";
+    let logoHeader1="<a href='index.html'> <img class='w3-bar-item w3-display-middle' src='images/logoHeader1.png'></a>";
+
+    // Put all the navbar components together.
+    let newNav=logoSmall + home + specs + robots + hardware + contact + about;
+    newNav += searchBox + goText + logoHeader1;
+
+    // Now substitute the approprate w3-schools w3-green selector to the
+    // passed in arg representing the current page. The other oddly named css
+    // elements should be ignored and will leave the navbar item unhighlighted.
+    let nav = newNav.replace(ap, "w3-green");
+
+    document.getElementById("nav").innerHTML = nav;
+
+    buildFooter();
+}

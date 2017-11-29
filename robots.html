@@ -2,53 +2,46 @@
 <html lang="en">
 <head>
   <title>Mr Robot!</title>
+    <meta charset="utf-8">
+    <!--*
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" type="text/css" />
-    <script src="script/script.js"></script>
-    <meta charset="utf-8">
+<li class="robo1LinkStartHere" id="robo1Link">
+    <body font-family: 'Source Sans Pro', sans-serif; onload="roboPageBuild('roboGreenRobots')">
+    -->
+    <link rel="stylesheet" href="style/robot.css" type="text/css">
+    <link rel="stylesheet" href="w3css/4/w3.css" type="text/css">
   </head>
-  <body font-family: 'Source Sans Pro', sans-serif;>
-  <header>
-      <div>
-          <a class="headerlogo" href="index.html">
-              <img src="images/logo.jpg" />
-          </a>
-          <span id="headername">Mr. Robot</span>
-          <input type="search" class="searchbox" placeholder="Search our store" />
-      </div>
-
-      <nav class="backgroundgradient">
-          <ul>
-            <li><a class="navlink" href="index.html">Home</a></li>
-            <li><a class="navlink" href="robots.html">Robots</a></li>
-            <li><a class="navlink" href="computers.html">Hardware</a></li>
-            <li><a class="navlink" href="contact.html">Contact</a></li>
-            <li><a class="navlink" href="about.html">About</a></li>
-          </ul>
-      </nav>
-  </header>
-
-<fieldset>
-<legend>Mr. Robot's Top Robot Models qQ</legend>
+    <!-- Pass roboGreenRobots so navbar shows correct active page. -->
+    <body style="font-family: Verdana, sans-serif" onload="roboPageBuild('roboGreenRobots')">
+        <!-- navbar START -->
+            <div id="nav" class="w3-bar w3-top roboBackColor"></div>
+        <!-- navbar END -->
+ 
+        <div class="roboStartHere"></div>
+        <div class="parallax-imgOne"></div>
+        <h1 class="w3-center">Mr. Robot's Top Robot Models</h1>
 
 <ul>
-<li >
-  <article id="robo1">
+<li>
+  <article id="robo1LinkStartHere">
   <h4>
   <label for="imgrobo1">  Name:</label>
      R.E.T.</h4>
   <img id="imgrobo1" src="images/roboDog.png" width=200 height=200 alt="robo1">
-
-  <h5><strong>Description:</strong> <br>This was our first robot.
+  <h5><strong>Description:</strong>
+        <div id="robo2Link"></div>
+      <br>This was our first robot.
    He was modeled after the famous movie character E.T.</h5>
 </article>
 </li>
 
-<li>
+<li id="robo1LinkStartHere">
   <article id="robo2">
 <h4>
 <label for="imgrobo2">  Name:</label>
    Butler.Bot</h4>
+<div id="robo3Link"></div>
 <img id="imgrobo2" src="images/robot2.png" width=200 height=200 alt="robo1">
 
 <h5><strong>Description:</strong> <br>This was our second robot.
@@ -69,13 +62,7 @@
 
 </li>
 </ul>
-</fieldset>
 
-<footer>
-  <p>Our address is <address>1011 Crater Ave, Moon City: THE MOON</address></p>
-  <p class="textcontent">All site contents is copyright <a class="mainlink" href="http://www.mrrobot.com">Mr Robot!</a></p>
-  <p class="smalltext">This page was generated on <time>09:25:04.123</time>.</p>
-</footer>
 
 <template id="producttemplate">
 <article>
@@ -90,8 +77,10 @@
 <div>User</div>
      <template id="address">
              <div>Address</div>
-     </template>
-</template>
+        </template>
+        </template>
 
-</body>
+        <footer class="w3-center" id="roboFooter"></footer>
+        <script src="script/script.js"></script>
+    </body>
 </html>

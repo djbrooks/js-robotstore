@@ -1,30 +1,21 @@
 ﻿<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-  <title>Mr Robot!</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" type="text/css" />
-  <link rel="stylesheet" href="style/robot.css" type="text/css" />
-    <meta charset="utf-8">
-</head>
-<body>
-    <header>
-        <div>
-            <a class="headerlogo" href="index.html">
-                <img src="images/logo.jpg" />
-            </a>
-            <span id="headername">Mr. Robot</span>
-            <input type="search" class="searchbox" placeholder="Search our store" />
-        </div>
-
-        <div class="topnav" id="myTopnav">
-              <a href="index.html">Home</a>
-              <a class="active" href="specs.html">Specs</a>
-              <a href="robots.html">Robots</a>
-              <a href="computers.html">Hardware</a>
-              <a href="contact.html">Contact</a>
-              <a href="about.html">About</a>
-        </div>
-            <h3>Requirements - Robot Store Day One</h3>
+    <head>
+        <meta charset="utf-8">
+        <title>Mr Robot!</title>
+        <!--
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" type="text/css" />
+        -->
+        <link rel="stylesheet" href="style/robot.css" type="text/css" />
+        <link rel="stylesheet" href="w3css/4/w3.css" type="text/css">
+    </head>
+    <!-- Pass roboGreenSpecs so navbar shows correct active page. -->
+    <body onload="roboPageBuild('roboGreenSpecs')">
+        <!-- navbar START -->
+        <div id="nav" class="w3-bar w3-top roboBackColor"></div>
+        <!-- navbar END -->
+            <div class="roboStartHere">
+            <h3 class ="w3-center">Requirements - Robot Store Day One</h3>
             <h4>Across All pages:</h4>
             <ul>
                 <li>The Mr. Robot logo needs to resized and place it in the top left hand corner of each page.</li>
@@ -67,7 +58,7 @@
                 <li>Highlight the active input on the Contact page to indicate to the user where they are in the form.
                     <li>Add mouse events to highlight Robots and Hardware when the user interacts with them on their respective pages.</li>
                         <li>Remove the alert from the Hardware page, using jQuery capture that data and log it to the console.</li>
-                            <li>Use the search bar to filter the Robots list and what is displayed.</li>
+                            <li>ONLY SHOW THE ROBOT SEARCHED FOR! Use the search bar to filter the Robots list and what is displayed.</li>
             </ul>
                                 </p>
 Tip! If I start to type Butler in the search bar, the other Robots should disappear and leave behind Butler.Bot.
@@ -94,13 +85,11 @@ Tip! You can see an example of this here. Resize the page to see how the Navbar 
             </p>
 <ul>
     <li>Make your site Responsive by implementing the Bootstrap Grid System.</li>
-    <li>Make your Robots into Thumbnails with captions that contain the information given to you in the HTML.</ul>
+    <li>USE BOOTSTRAP THUMBNAIL GALLERY... Make your Robots into Thumbnails with captions that contain the information given to you in the HTML.</ul>
         </p>
-    <footer>
-      <p>Our address is <address>1011 Crater Ave, Moon City: THE MOON</address></p>
-      <p class="textcontent">All site contents is copyright <a class="mainlink" href="http://www.mrrobot.com">Mr Robot!</a></p>
-      <p class="smalltext">This page was generated on <time>09:25:04.123</time>.</p>
-    </footer>
-</body>
+        <footer id="roboFooter" class="w3-center"></footer>
+            </div>
+        <script type="text/javascript" src="script/script.js"></script>
+    </body>
 
 </html>

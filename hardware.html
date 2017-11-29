@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Mr Robot!</title>
+    <meta charset="utf-8">
+    <!--
+  <link href="https://fonts.googleapis.com/css?family=Volkhov" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" type="text/css" />
+    -->
+        <link rel="stylesheet" href="style/robot.css" type="text/css" />
+        <link rel="stylesheet" href="w3css/4/w3.css" type="text/css">
+    </head>
+    <!-- Pass roboGreenHardware so navbar shows correct active page. -->
+    <body font-family: 'Volkhov', serif; onload="roboPageBuild('roboGreenHardware')">
+        <!-- navbar START -->
+        <div id="nav" class="w3-bar w3-top roboBackColor"></div>
+        <!-- navbar END -->
+        <div class="roboStartHere">
+
+    <form>
+      <fieldset>
+        <legend>Select a CPU</legend>
+        <p><label for="i3"><input type="radio" name="CPU" id="i3">Intel i3</label></p>
+        <p><label for="i4"><input type="radio" name="CPU" id="i4"></label>Intel i4</p>
+        <p><label for="i7"><input type="radio" name="CPU" id="i7"></label>Intel i7</p>
+      </fieldset>
+  <fieldset>
+    <legend>Select Ram</legend>
+    <p><label for="8"><input type="radio" name="ram" id="8">8gig</label></p>
+    <p><label for="16"><input type="radio" name="ram" id="16">16gig</label></p>
+  </fieldset>
+    <fieldset>
+      <legend></legend>
+
+      <p><label for="vrh"><input type="checkbox" name="" id="vrh">Virtual Reality Helmet</label></p>
+      <p><label for="3ds"><input type="checkbox" name="" id="3ds">3D Screen</label></p>
+      <p><label for="ss"><input type="checkbox" name="" id="ss">Stereo Speakers</label></p>
+    </fieldset>
+  <p>
+    <button>Submit</button>
+  </p>
+</form>
+        <footer id="roboFooter" class="w3-center"></footer>
+        </div>
+        <script type="text/javascript" src="script/script.js"></script>
+    </body>
+</html>
