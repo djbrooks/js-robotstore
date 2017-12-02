@@ -4,7 +4,7 @@
         <title>Mr Robot!</title>
         <meta charset="utf-8">
         <!--
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" type="text/css" />
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" type="text/css" />
         -->
         <link rel="stylesheet" href="style/robot.css" type="text/css" />
         <link rel="stylesheet" href="w3css/4/w3.css" type="text/css">
@@ -15,32 +15,52 @@
         <div id="nav" class="w3-bar w3-top roboBackColor"></div>
         <!-- navbar END -->
         <div class="roboStartHere">
-<form id="contactForm">
-    <div>
-    <legend>Enter your Contact info below:</legend>
-     <p>
-    <label for="fullname">Full Name:</label><input type="text" name="fullname" id="fullname">
-     </p>
-<p>
-    <label for="email">   Email:</label><input type="email" name="email" id="email">
-</p>
-<p>
-    <label for="yloc">   Location:</label>
-    <select name="" id="yloc">
-      <option value="0">Moon</option>
-      <option value="1">Earth</option>
-    </select>
-</p>
-<p><label for="quest">Your Question</label><br>
-  <textarea name="quest" id="" cols="50" rows="10" maxlength="500"></textarea></p>
-</div>
+            <form id="contactForm">
+                <div>
+                    <legend>Enter your Contact info below:</legend>
+                    <p>
+                    <label for="fullname">Full Name:</label><input type="text" name="fullname" id="fullname" autofocus>
+                    </p>
+                    <p>
+                    <label for="email">   Email:</label><input type="email" name="email" id="email">
+                    </p>
+                    <p>
+                    <label for="yloc">   Location:</label>
+                    <select name="" id="yloc">
+                        <option value="0">Moon</option>
+                        <option value="1">Earth</option>
+                    </select>
+                    </p>
+                    <p><label for="quest">Your Question</label><br>
+                    <textarea name="quest" id="" cols="50" rows="10" maxlength="500"></textarea></p>
+                </div>
 
-  <p>
-  <button id="btnSendInfo" class="submitbutton">Send Info</button>
-  </p>
-</form>
-        <footer id="roboFooter" class="w3-center"></footer>
+                <p>
+                <button id="btnSendInfo" class="submitbutton">Send Info</button>
+                </p>
+            </form>
+            <footer id="roboFooter" class="w3-center"></footer>
         </div>
-        <script type="text/javascript" src="script/script.js"></script>
+                <!--
+            <script src="node_modules/jquery/dist/jquery.min.js"></script>
+            <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+            -->
+
+            <!--
+                CDN versions of jQuery and bootstrap. More portable...
+            -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+            </script>
+
+            <!-- Need this for the search menu... -->
+            <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<!--
+         <script src="scripts/jquery-1.6.2.min.js"></script>
+         -->
+
+            <!-- Latest compiled and minified JavaScript -->
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+            </script>
+            <script type="text/javascript" src="script/script.js"></script>
     </body>
 </html>

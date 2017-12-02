@@ -1,3 +1,36 @@
+img {
+    opacity: 1.0;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
+img:hover {
+    opacity: .5;
+    filter: alpha(opacity=100); /* For IE8 and earlier */
+}
+
+.roboContainer {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* On mouse-over, add a grey background color */
+.roboContainer:hover {
+    background: lightgrey;
+}
+
+/* 
+ * Grey input areas that are in focus
+ */
+input:focus {
+    background-color: lightgrey;
+}
 .roboBackColor {
     background-color: white;
     position: absolute;
@@ -22,6 +55,7 @@
     right: 0px;
 }
 
+/* To try and get HUGE sticky navbar to work right... :| */
 .roboStartHere {
     position: relative;
     top: 180px;
@@ -78,7 +112,7 @@
 
 .parallax-imgOne {
     /* The image used */
-    background-image: url("../images/Mr.-Robot-Welcome.png");
+    background-image: url("../images/Mr.-Robot-Welcome.jpg");
     text-align: center;
 
     /* Set a specific height */
@@ -90,9 +124,11 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 .parallax-imgTwo {
     /* The image used */
     background-image: url("../images/welcome.jpg");
+    text-align: center;
 
     /* Set a specific height */
     height: 300px; 

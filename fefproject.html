@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8">
+        <title>Mr Robot!</title>
+        <!--
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" type="text/css" />
+        -->
+        <link rel="stylesheet" href="style/robot.css" type="text/css" />
+        <link rel="stylesheet" href="w3css/4/w3.css" type="text/css">
+    </head>
+    <!-- Pass roboGreenFefproject so navbar shows correct active page. -->
+    <body onload="roboPageBuild('roboGreenFfeproject')">
+        <!-- navbar START -->
+        <div id="nav" class="w3-bar w3-top roboBackColor"></div>
+        <!-- navbar END -->
+        <div class="roboStartHere">
+            <h3 class ="w3-center">Front End Foundations Final Project</h3>
+            <p>
+            Now that you have completed the Front End Foundations Course, you should be able to build a complete website using HTML, CSS, JavaScript, jQuery, and Bootstrap. In this project, we will be testing what you have learned. You will be creating a Car Dealership to test your abilities. This project is to be completed outside of the browser, using your IDE, or editor of choice.
+            </p>
+            <h3>Requirements</h3>
+            <h4>HTML</h4>
+            <p>You will need at least four pages: Home(index), Inventory, About, and Contact Page.<p>
+
+            <p>Each page should have Navigation to and from the page.
+            The Inventory list should display at least five different vehicles.
+            The Home page should incorporate a video that plays when the user enters the page.</p>
+            <h4>CSS</h4>
+            <ul>
+                <li>A minimum of three different fonts.</li>
+                <li>Each page needs to be styled differently.</li>
+            </ul>
+            <h4>JavaScript/jQuery</h4>
+            <ul>
+                <li>Use jQuery to dynamically fill the Inventory table.</li>
+                <li>Use jQuery for immediate search results of inventory, and should display message if no results found.</li>
+                <li>Ability to calculate tax based on the given vehicle price. (.08% tax)</li>
+            </ul>
+            <h4>Bootstrap</h4>
+            <ul>
+                <li>Responsive Site using Bootstraps grid system.</li>
+                <li>Implement a responsive Navbar for mobile and tablet use.</li>
+                <li>Implement a carousel on the top of Inventory to showcase the cars.</li>
+            </ul>
+            <p>
+            Tip! When designing your Car Dealership, have a theme in mind. This can include everything from a color scheme to the placement of items on the page. For inspiration view your favorite online stores.
+            </p>
+            <h4>Grading</h4>
+            <ul>
+                <li>Meets all Requirements: 50% of your grade will be based on meeting the requirements.</li>
+                <li>Timely Submission: 25% of your grade will be based on having a complete solution on time.</li>
+                <li>Style: 25% of your grade will be based on having legible, and well-designed code.</li>
+                <li>Be sure to save your solution, and be prepared to share it with your Instructor or Mentor during your next class, or check-in.</li>
+            </ul>
+
+            <p>
+            Tip! Your Instructor or Mentor may test your program with additional inputs, so be sure to test it thoroughly with different scenarios.
+            </p>
+            <footer id="roboFooter" class="w3-center"></footer>
+        </div>
+        <!--
+            <script src="node_modules/jquery/dist/jquery.min.js"></script>
+            <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+            -->
+
+            <!--
+                CDN versions of jQuery and bootstrap. More portable...
+            -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+            </script>
+
+            <!-- Need this for the search menu... -->
+            <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+            <!--
+                <script src="scripts/jquery-1.6.2.min.js"></script>
+                -->
+
+                <!-- Latest compiled and minified JavaScript -->
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+                </script>
+                <script type="text/javascript" src="script/script.js"></script>
+    </body>
+
+</html>

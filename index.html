@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
-       <meta charset="utf-8">
+        <meta charset="utf-8">
         <title>Mr Robot!</title>
         <!--
             <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -14,14 +14,29 @@
         <!-- navbar START -->
         <div id="nav" class="w3-bar w3-top roboBackColor"></div>
         <!-- navbar END -->
-        <div class="roboStartHere"></div>
-        <div class="parallax-imgOne"></div>
-        <div class="w3-center"/>
-            <img src="images/robot_hello.png"/>
-            <h2>Welcome to Mr Robot!</h2>
-        </div>
 
-        <div id="containerTwo">
+        <!-- CAREFUL! Because I don't need a margin (two columns) I can
+             close the roboStartHere div, else it would have to go below
+             the footer like all the other pages... :( -->
+        <div class="roboStartHere"></div>
+            <div class="parallax-imgOne"></div>
+            <!-- Cheated on first parallax image. BEFORE roboStartHere class.. -->
+            <!-- Will cover page w/no margin. Looks better than 2nd parallax. -->
+            <!--
+                Loading Page attempt...
+<div id="roboLoading"></div>
+<div id="roboContainerWait">
+    <img src="images/roboDog.png"/>
+</div>
+            -->
+            <div class="w3-center"/>
+                <img src="images/robot_hello.png"/>
+                <h2>Welcome to Mr Robot!</h2>
+            </div>
+
+
+            <div id="containerTwo">
+
                 <div id="containerOne">
                     <div id="colOne">
                         <!-- Column one start -->
@@ -39,7 +54,27 @@
             <p class="w3-center"><mark>Note that our store is closed on Christmas eve and Christmas day.</mark></p>
             <div class="parallax-imgTwo"></div>
             <footer id="roboFooter" class="w3-center"></footer>
-            <script type="text/javascript" src="script/script.js"></script>
-    </body>
 
+        <!--
+            <script src="node_modules/jquery/dist/jquery.min.js"></script>
+            <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+            -->
+
+            <!--
+                CDN versions of jQuery and bootstrap. More portable...
+            -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+            </script>
+
+            <!-- Need this for the search menu... -->
+            <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<!--
+         <script src="scripts/jquery-1.6.2.min.js"></script>
+         -->
+
+            <!-- Latest compiled and minified JavaScript -->
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+            </script>
+            <script type="text/javascript" src="script/script.js"></script>
+   </body>
 </html>

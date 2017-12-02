@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Mr Robot!</title>
-    <meta charset="utf-8">
-    <!--
-  <link href="https://fonts.googleapis.com/css?family=Volkhov" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" type="text/css" />
-    -->
+    <head>
+        <title>Mr Robot!</title>
+        <meta charset="utf-8">
+        <!--
+            <link href="https://fonts.googleapis.com/css?family=Volkhov" rel="stylesheet">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" type="text/css" />
+        -->
         <link rel="stylesheet" href="style/robot.css" type="text/css" />
         <link rel="stylesheet" href="w3css/4/w3.css" type="text/css">
     </head>
@@ -16,32 +16,47 @@
         <div id="nav" class="w3-bar w3-top roboBackColor"></div>
         <!-- navbar END -->
         <div class="roboStartHere">
-
-    <form>
-      <fieldset>
-        <legend>Select a CPU</legend>
-        <p><label for="i3"><input type="radio" name="CPU" id="i3">Intel i3</label></p>
-        <p><label for="i4"><input type="radio" name="CPU" id="i4"></label>Intel i4</p>
-        <p><label for="i7"><input type="radio" name="CPU" id="i7"></label>Intel i7</p>
-      </fieldset>
-  <fieldset>
-    <legend>Select Ram</legend>
-    <p><label for="8"><input type="radio" name="ram" id="8">8gig</label></p>
-    <p><label for="16"><input type="radio" name="ram" id="16">16gig</label></p>
-  </fieldset>
-    <fieldset>
-      <legend></legend>
-
-      <p><label for="vrh"><input type="checkbox" name="" id="vrh">Virtual Reality Helmet</label></p>
-      <p><label for="3ds"><input type="checkbox" name="" id="3ds">3D Screen</label></p>
-      <p><label for="ss"><input type="checkbox" name="" id="ss">Stereo Speakers</label></p>
-    </fieldset>
-  <p>
-    <button>Submit</button>
-  </p>
-</form>
-        <footer id="roboFooter" class="w3-center"></footer>
+            <form>
+                <fieldset>
+                    <legend>Select a CPU</legend>
+                    <p><label class="roboContainer" for="i3"><input type="radio" name="CPU" value="i3" id="i3"> Intel i3</label></p>
+                    <p><label class="roboContainer" for="i4"><input type="radio" name="CPU" value="i4" id="i4"> Intel i4</label></p>
+                    <p><label class="roboContainer" for="i7"><input type="radio" name="CPU" value="i7" id="i7"> Intel i7</label></p>
+                </fieldset>
+                <fieldset>
+                    <legend>Select Ram</legend>
+                    <p><label class="roboContainer" for="8"><input type="radio" name="ram" value="8gig"id="8"> 8gig</label></p>
+                    <p><label class="roboContainer" for="16"><input type="radio" name="ram" value="16gig" id="16"> 16gig</label></p>
+                </fieldset>
+                <fieldset>
+                    <legend>Misc Equipment</legend> 
+                    <p><label class="roboContainer" for="vrh"><input type="checkbox" name="" value="vrh" id="vrh"> Virtual Reality Helmet</label></p>
+                    <p><label class="roboContainer" for="3ds"><input type="checkbox" name="" value="3ds" id="3ds"> 3D Screen</label></p>
+                    <p><label class="roboContainer" for="ss"><input type="checkbox" name="" value="ss" id="ss"> Stereo Speakers</label></p>
+                </fieldset>
+                <p>
+                <button>Submit</button>
+                </p>
+            </form>
+            <footer id="roboFooter" class="w3-center"></footer>
         </div>
-        <script type="text/javascript" src="script/script.js"></script>
+        <!--
+            <script src="node_modules/jquery/dist/jquery.min.js"></script>
+            <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+            -->
+
+
+            <!--
+                CDN versions of jQuery and bootstrap. More portable...
+            -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+            </script>
+
+            <!-- Latest compiled and minified JavaScript -->
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+            </script>
+
+            <script type="text/javascript" src="script/script.js"></script>
+            <script type="text/javascript" src="script/hardwareOrder.js"></script>
     </body>
 </html>
