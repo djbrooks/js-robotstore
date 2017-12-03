@@ -21,7 +21,7 @@ for (var i=0;i<document.forms.length;i++) {
         }
         // Log to console.log: alert(results);
         //   console.log(results);
-        alert("javascript results are:\n" + results + "\nCheck console log for jQuery output...");
+        alert("javascript results are:\n" + results + "\nCheck console log for jQuery output... \nShould really clear the form as well, but NO TIME!");
     });
 }
 
@@ -29,16 +29,18 @@ for (var i=0;i<document.forms.length;i++) {
  *
  *   Test Checkboxes/Radio Buttons settings using jQuery
  *
+$( "#roboHardwareSubmit" ).submit(function() {
  *********************************************************/
 $( "form" ).submit(function() {
-    var msg = "jQuery results are:\n";
-    var cpuRam = "CPU and RAM: ";
+    let msg = "jQuery results are:\n";
+    let msg2 = "\nShould really clear the form too, but NO TIME!";
+    let cpuRam = "CPU and RAM: ";
     cpuRam += $("input:radio:checked").map(function() {
         return $(this).val();
     }).get();
-    var miscEquipment = "Misc Equipment: ";
+    let miscEquipment = "Misc Equipment: ";
     miscEquipment += $("input:checkbox:checked").map(function() {
         return $(this).val();
     }).get();
-    console.log(msg + cpuRam + "\n" + miscEquipment);
+    console.log(msg + cpuRam + "\n" + miscEquipment + msg2);
 });

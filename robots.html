@@ -3,65 +3,67 @@
     <head>
         <title>Mr Robot!</title>
         <meta charset="utf-8">
-        <!--*
-            <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" type="text/css" />
-            <li class="robo1LinkStartHere" id="robo1Link">
-            <body font-family: 'Source Sans Pro', sans-serif; onload="roboPageBuild('roboGreenRobots')">
-        -->
+
+        <!-- Bootstrap core CSS -->
+        <link href="style/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="style/robot.css" type="text/css">
         <link rel="stylesheet" href="w3css/4/w3.css" type="text/css">
+
     </head>
     <!-- Pass roboGreenRobots so navbar shows correct active page. -->
     <body style="font-family: Verdana, sans-serif" onload="roboPageBuild('roboGreenRobots')">
         <!-- navbar START -->
-        <div id="nav" class="w3-bar w3-top roboBackColor"></div>
+        <div id="NOTroboNav"></div>
         <!-- navbar END -->
+
+
+        <nav class='navbar navbar-default navbar-fixed-top'>
+            <div class='container'>
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#robo-navbar-collapse" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img src="images/logoSmall-50px.png"/></a>
+                </div>
+                <div class='collapse navbar-collapse' id ='robo-navbar-collapse'>
+                    <ul class='nav navbar-nav'> <li class='roboGreenIndex'><a href='index.html'>Home</a></li> <li class='roboGreenSpecs'><a href='specs.html'>Specs</a></li> <li class='roboGreenFefproject'><a href='fefproject.html'>FEF_Proj</a></li> <li class='dropdown w3-light-green'> <a href='robots.html' class='dropdown-toggle' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false'>Robots <span class='caret'></span></a> <ul class='dropdown-menu'> <li><a href='robots.html'>All Robots</a></li> <li><a href='robotsRET.html'>R.E.T.</a></li> <li><a href='robotsButlerBot.html'>Butler.Bot</a></li> <li><a href='robotsMegaMan.html'>Mega Man</a></li> <li role='separator' class='divider'></li> <li><a href='specs.html'>Specs</a></li> <li><a href='fefproject.html'>FEF Proj</a></li> </ul> </li> <li class='roboGreenHardware'><a href='hardware.html'>Hardware</a></li> <li class='roboGreenContact'><a href='contact.html'>Contact</a></li> <li class='roboGreenAbout'><a href='about.html'>About</a></li> </ul> <div class="navbar-form navbar-right"> <input list="roboRobotsList" class="form-control roboSearchArg" placeholder="Search our store"> <datalist id="roboRobotsList"> <option data-id='RET' value='R.E.T.'> Our very first robot</option> <option data-id='ButlerBot' value='Butler.Bot'> Makes martinis :)</option> <option data-id='MegaMan' value='Mega Man'> Newest model</option> </datalist> <button class='roboSearchGo btn btn-default w3-light-green'>Go</button> </div> </div> </div> </nav>
+
         <div class="roboStartHere"></div>
         <!--
         -->
         <div class="parallax-imgOne"></div>
+
         <h1 class="w3-center">Mr. Robot's Top Robot Models</h1>
 
-        <ul>
-            <li>
-                <article id="robo1">
-                    <h4>
-                        <label for="imgrobo1">  Name:</label>
-                        R.E.T.</h4>
-                    <img id="imgrobo1" src="images/roboDog.png" width=200 height=200 alt="robo1">
-                    <h5><strong>Description:</strong>
-                        <br>This was our first robot.
-                        He was modeled after the famous movie character E.T.</h5>
-                </article>
-            </li>
-
-            <li>
-                <article id="robo2">
-                    <h4>
-                        <label for="imgrobo2">  Name:</label>
-                        Butler.Bot</h4>
-                    <div id="robo3Link"></div>
-                    <img id="imgrobo2" src="images/robot2.png" width=200 height=200 alt="robo1">
-
-                    <h5><strong>Description:</strong> <br>This was our second robot.
-                        He makes a mean martini!</h5>
-                </article>
-            </li>
-            <li>
-                <article id="robo3">
-                    <h4>
-                        <label for="imgrobo3">  Name:</label>
-                        Mega Man</h4>
-                    <img id="imgrobo3" src="images/robot3.jpg" width=200 height=200 alt="robo1">
-
-                    <h5><strong>Description:</strong> <br>This is our newest model.
-                        This one will follow you around the house.</h5>
-
-                </article>
-
-            </li>
-        </ul>
+        <div class="container-fluid">
+            <div class='row'>
+                <div class="col-sm-4" style="background-color:salmon;">
+                    <figure>
+                        <p><label for="imgrobo1">  Name: </label>R.E.T.</p>
+                        <img id="imgrobo1" class="img-thumbnail" src="images/roboDog.png" width=80 height=80 alt="robo1">
+                         <figcaption><strong>Description: <strong>This was our first robot. He was modeled after the famous movie character E.T.</figcaption>
+                    </figure>
+                </div>
+            <div class="col-sm-4" style="background-color:yellow;">
+                <figure>
+                    <p><label for="imgrobo2">Name: </label>Butler.Bot</p>
+                        <img id="imgrobo2" class="img-thumbnail" src="images/robot2.png" width=80 height=80 alt="robo2">
+                        <figcaption><strong>Description: <strong>This is our second robot. He makes a mean martini!</figcaption>
+                </figure>
+            </div>
+            <div class="col-sm-4" style="background-color:pink;">
+                <figure>
+                    <p><label for="imgrobo3">  Name: </label>Mega Man</p>
+                        <img id="imgrobo3" src="images/robot3.jpg" width=80 height=80 alt="robo3">
+                        <figcaption><strong>Description: <strong>This is our newest model. This one will follow you around the house.</figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
 
         <template id="producttemplate">
             <article>
@@ -80,26 +82,19 @@
         </template>
 
         <footer class="w3-center" id="roboFooter"></footer>
-        <!--
-            <script src="node_modules/jquery/dist/jquery.min.js"></script>
-            <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-            -->
 
-            <!--
-                CDN versions of jQuery and bootstrap. More portable...
-            -->
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+        </script>
+
+        <!-- Need this for the search menu... -->
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <!-- ================================================== -->
+        <!-- Bootstrap core JavaScript
+            ================================================== -->
+            <!-- Placed at the end of the document so the pages load faster -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
             </script>
-
-            <!-- Need this for the search menu... -->
-            <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-            <!--
-                <script src="scripts/jquery-1.6.2.min.js"></script>
-                -->
-
-                <!-- Latest compiled and minified JavaScript -->
-                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
-                </script>
-                <script type="text/javascript" src="script/script.js"></script>
+            <script src="script/script.js"></script>
     </body>
 </html>
