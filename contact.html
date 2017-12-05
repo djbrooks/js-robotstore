@@ -1,78 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Mr Robot!</title>
-        <meta charset="utf-8">
+<head>
+  <!--
+      Theme Made By www.w3schools.com - No Copyright
+  -->
+  <title>FEF Car Dealership</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="style/car.css">
+</head>
+<body>
 
-        <!-- Bootstrap core CSS -->
-        <link href="style/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="style/robot.css" type="text/css">
-        <link rel="stylesheet" href="w3css/4/w3.css" type="text/css">
+<body onload="carPageBuild('carContactPage')">
+<!--
+    Navbar
+-->
+    <div id="carNavbar"></div>
 
-    </head>
-    <!-- Pass roboGreenContact so navbar shows correct active page. -->
-    <body onload="roboPageBuild('roboGreenContact')">
-        <!-- navbar START -->
-        <div id="NOTroboNav" class="w3-bar w3-top roboBackColor"></div>
-        <!-- navbar END -->
+<!--
+    First Container
+      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+  <source src="images/RocketRide.m4v" type="video/mp4">
+-->
+  
+<div class="container text-center">    
+  <h3>Please use any of the below methods to contact us!</h3><br>
+  <div class="row">
+    <div class="col-sm-4" style='background-color:pink'> 
 
-
-<nav class='navbar navbar-default navbar-fixed-top'>
-     <div class='container'>
-             <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#robo-navbar-collapse" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="index.html"><img src="images/logoSmall-50px.png"/></a>
+<p>
+<video width="100%" controls loop>
+  <source src="https://southerncareersinstitute-my.sharepoint.com/personal/david_brooks_my_scitexas_edu/_layouts/15/guestaccess.aspx?guestaccesstoken=arHmqPNdKOG2XEwWVRdkcHFO4SPghJAEntYz6W69acs%3D&docid=2_06a1c772a77924ff3a9632e2883db6ba2&rev=1&e=7bf75db9f2f3469198996253fa249a3f" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+<a href="images/RocketRide.m4v" target="_blank">Created by SpaceX especially for Unique Car Company customers.</a>
+</p>
     </div>
-         <div class='collapse navbar-collapse' id ='robo-navbar-collapse'>
-             <ul class='nav navbar-nav'> <li class='roboGreenIndex'><a href='index.html'>Home</a></li> <li class='roboGreenSpecs'><a href='specs.html'>Specs</a></li> <li class='roboGreenFefproject'><a href='fefproject.html'>FEF_Proj</a></li> <li class='dropdown roboGreenRobots'> <a href='robots.html' class='dropdown-toggle' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false'>Robots <span class='caret'></span></a> <ul class='dropdown-menu'> <li><a href='robots.html'>All Robots</a></li> <li><a href='robotsRET.html'>R.E.T.</a></li> <li><a href='robotsButlerBot.html'>Butler.Bot</a></li> <li><a href='robotsMegaMan.html'>Mega Man</a></li> <li role='separator' class='divider'></li> <li><a href='specs.html'>Specs</a></li> <li><a href='fefproject.html'>FEF Proj</a></li> </ul> </li> <li class='roboGreenHardware'><a href='hardware.html'>Hardware</a></li> <li class='w3-light-green'><a href='contact.html'>Contact</a></li> <li class='roboGreenAbout'><a href='about.html'>About</a></li> </ul> <div class="navbar-form navbar-right"> <input list="roboRobotsList" class="form-control roboSearchArg" placeholder="Search our store"> <datalist id="roboRobotsList"> <option data-id='RET' value='R.E.T.'> Our very first robot</option> <option data-id='ButlerBot' value='Butler.Bot'> Makes martinis :)</option> <option data-id='MegaMan' value='Mega Man'> Newest model</option> </datalist> <button class='roboSearchGo btn btn-default w3-light-green'>Go</button> </div> </div> </div> </nav>
 
-        <div class="roboStartHere">
-            <form id="contactForm">
-                <div>
-                    <legend>Enter your Contact info below:</legend>
-                    <p>
-                    <label for="fullname">Full Name:</label><input type="text" name="fullname" id="fullname" autofocus>
-                    </p>
-                    <p>
-                    <label for="email">   Email:</label><input type="email" name="email" id="email">
-                    </p>
-                    <p>
-                    <label for="yloc">   Location:</label>
-                    <select name="" id="yloc">
-                        <option value="0">Moon</option>
-                        <option value="1">Earth</option>
-                    </select>
-                    </p>
-                    <p><label for="quest">Your Question</label><br>
-                    <textarea name="quest" id="" cols="50" rows="10" maxlength="500"></textarea></p>
-                </div>
-
-                <p>
-                <button id="btnSendInfo" class="submitbutton">Send Info</button>
-                </p>
-            </form>
-            <footer id="roboFooter" class="w3-center"></footer>
-        </div>
+    <div class="col-sm-8" style='background-color:salmon'>
+      <div class="well">
+          <p>Snail Mail: Everyone knows us.<br>
+          Simply address to Unique Car Company and drop in the mail.</p>
+      </div>
+      <div class="well">
+       <p>Email to: CoolPeople@TheInternet (We'll get it...)</p>
+      </div>
+    </div>
+  </div>
+</div><br>
 
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
-        </script>
+<!--
+    Footer
+-->
+<footer id="carFooter" class="container-fluid text-center"><p></p></footer>
 
-        <!-- Need this for the search menu... -->
-        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-        <!-- ================================================== -->
-        <!-- Bootstrap core JavaScript
-            ================================================== -->
-            <!-- Placed at the end of the document so the pages load faster -->
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
-            </script>
-            <script src="script/script.js"></script>
-    </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="script/car.js"></script>
+</body>
 </html>

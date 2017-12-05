@@ -1,66 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Mr Robot!</title>
-        <meta charset="utf-8">
+<head>
+  <!--
+      Theme Made By www.w3schools.com - No Copyright
+  -->
+  <title>FEF Car Dealership</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="style/car.css">
+</head>
+<body>
 
-    <!-- Bootstrap core CSS -->
-    <link href="style/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style/robot.css" type="text/css">
-    <link rel="stylesheet" href="w3css/4/w3.css" type="text/css">
+<body onload="carPageBuild('carAboutPage')">
+<!--
+    Navbar
+-->
+    <div id="carNavbar"></div>
 
-    </head>
-    <!-- Pass roboGreenAbout so navbar shows correct active page.
-        Can't dynamically build navbar. Unable to explain why and no time
-        to get to the bottom of it... 
-    -->
-    <body style="font-family: Verdana, Times, cursive" onload="roboPageBuild('roboGreenAbout')">
-        <!-- navbar START
-            Can NOT figure why building the navbar in onload jQuery fuction
-            does not work. Grrrr.. Now have to include it in each page. 
-            Sucky...
-        -->
-        <div id="NOTroboNav" class="w3-bar w3-top roboBackColor"></div>
-        <!-- navbar END -->
-        
-<nav class='navbar navbar-default navbar-fixed-top'>
-     <div class='container'>
-             <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#robo-navbar-collapse" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="index.html"><img src="images/logoSmall-50px.png"/></a>
-    </div>
-         <div class='collapse navbar-collapse' id ='robo-navbar-collapse'>
-             <ul class='nav navbar-nav'> <li class='roboGreenIndex'><a href='index.html'>Home</a></li> <li class='roboGreenSpecs'><a href='specs.html'>Specs</a></li> <li class='roboGreenFefproject'><a href='fefproject.html'>FEF_Proj</a></li> <li class='dropdown roboGreenRobots'> <a href='robots.html' class='dropdown-toggle' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false'>Robots <span class='caret'></span></a> <ul class='dropdown-menu'> <li><a href='robots.html'>All Robots</a></li> <li><a href='robotsRET.html'>R.E.T.</a></li> <li><a href='robotsButlerBot.html'>Butler.Bot</a></li> <li><a href='robotsMegaMan.html'>Mega Man</a></li> <li role='separator' class='divider'></li> <li><a href='specs.html'>Specs</a></li> <li><a href='fefproject.html'>FEF Proj</a></li> </ul> </li> <li class='roboGreenHardware'><a href='hardware.html'>Hardware</a></li> <li class='roboGreenContact'><a href='contact.html'>Contact</a></li> <li class='w3-light-green'><a href='about.html'>About</a></li> </ul> <div class="navbar-form navbar-right"> <input list="roboRobotsList" class="form-control roboSearchArg" placeholder="Search our store"> <datalist id="roboRobotsList"> <option data-id='RET' value='R.E.T.'> Our very first robot</option> <option data-id='ButlerBot' value='Butler.Bot'> Makes martinis :)</option> <option data-id='MegaMan' value='Mega Man'> Newest model</option> </datalist> <button class='roboSearchGo btn btn-default w3-light-green'>Go</button> </div> </div> </div> </nav>
+<!--
+    First Container
+-->
+<div class="container-fluid bg-1 text-center w3ThemeCar">
+    <h3 class="margin">The Unique Car Company is Unique!</h3>
+    <p id="nonsenseAboutText"></p>
+  <img src="images/profilePic.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Random shot" width="350" height="350">
+  <h3>Themes shamelessly stolen from <a href="https://www.w3schools.com/bootstrap/bootstrap_theme_me.asp" target="_blank">W3Schools.</a></h3>
+  <p></p>
+</div>
 
-        <div class="roboStartHere">
-            <h1 class='w3-center'>Our History</h1>
+<!--
+    Footer
+-->
+<footer id="carFooter" class="container-fluid text-center"><p></p></footer>
 
-            <h5><strong>Mr. Robot</strong> <br>Our goal is to creat the best Robots money can buy.</h5>
-            <p>
-            Elliott Alderson  started the company back in 2019 after the crash of evil Corp in order to try and restore order in the world through the helping hands of Robots.  Our store is located in downtown Moon City right next to the Cheesecake Factory.</p>
-            <p>
-            Hope to see you soon!
-            </p>
-            <footer id="roboFooter" class="w3-center"></footer>
-
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
-            </script>
-
-            <!-- Need this for the search menu... -->
-            <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-            <!-- ================================================== -->
-        <!-- Bootstrap core JavaScript
-            ================================================== -->
-            <!-- Placed at the end of the document so the pages load faster -->
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
-                </script>
-            <script src="script/script.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="script/car.js"></script>
 </body>
 </html>
