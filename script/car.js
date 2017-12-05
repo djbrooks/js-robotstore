@@ -20,16 +20,17 @@ function buildInventoryPage() {
     }
 
     Vehicle.prototype.inventoryDisplay = function() {
-        let ta = this.priceN * .08;
-        let wt = this.priceN + ta;
+        let ta = this.priceNumber * .08;
+        let wt = this.priceNumber + ta;
+        let nta = ta.toFixed(2).replace(/(\d)(?=(\d{3})+\.)/g, '$1,');
+        let nwt = wt.toFixed(2).replace(/(\d)(?=(\d{3})+\.)/g, '$1,');
         return "<p>" + this.description + "</p>" 
             + "<img id='carInventoryImg' src='" + this.imgLocation 
             + "' class='img-responsive' "
             + "style='width:100%' alt='" + this.carType + "'>"
-            + "<div class='carBottomLeft'>" + this.priceExtra 
-            + " " + this.priceDisplay + "</div>"
-            + "<div class='carBottomLeft' style='display:none;'>" 
-            + "Total price including tax (" + ta + ") is: " + wt +"</div>" 
+            + "<a class='carBottomLeft' data-toggle='tooltip' data-placement='right' " 
+            + "title='Total price including tax (" + nta + ") is: $" + nwt + "'>" 
+            + this.priceExtra + " " + this.priceDisplay + "</a>";
     };
 
 
@@ -42,6 +43,7 @@ function buildInventoryPage() {
         , ""
         , "Excellent in the snow with a very tight turning radius."
     );
+console.log(myBronco.print);
 
     let myClassic = new Vehicle (
           "Timeless Ford Beauty"
@@ -58,7 +60,7 @@ function buildInventoryPage() {
         , 1999
         , "$1,999"
         , ""
-        ,  "Ralph Nader was nuts! These were great cars. Good in snow with plenty of room inside."
+        ,  "Ralph Nader was nuts! These are great cars. Good in snow with a huge interior."
     );
 
     let myOcean = new Vehicle (
@@ -76,7 +78,7 @@ function buildInventoryPage() {
         , 134999
         , "$134,999"
         , "Starts at"
-        ,  "As far as I'm concerned: The Ultimate too cool car of the '70s in Road Runner orange."
+        ,  "As far as I'm concerned: The Ultimate too cool car of the '70s in classic Road Runner orange."
     );
 
     let myTree = new Vehicle (
@@ -89,24 +91,6 @@ function buildInventoryPage() {
     );
 
 
-/*
-$( ".carBottomLeft" ).hover( function() {
-    $( this ).append( $( "<span> ***</span>" ) );
-  }, function() {
-    $( this ).find( "span:last" ).remove();
-  }
-);
- 
-$( "li.fade" ).hover(function() {
-  $( this ).fadeOut( 100 );
-  $( this ).fadeIn( 500 );
-});
-*/
-
-
-
-
-
     document.getElementById("carBronco").innerHTML = myBronco.inventoryDisplay();
     document.getElementById("carClassic").innerHTML = myClassic.inventoryDisplay();
     document.getElementById("carCorvair").innerHTML = myCorvair.inventoryDisplay();
@@ -115,9 +99,7 @@ $( "li.fade" ).hover(function() {
     document.getElementById("carTree").innerHTML = myTree.inventoryDisplay();
 
 
-    $(".carBottomLeft").hover(function(){
-        $(this).toggle();
-    });
+    $('[data-toggle="tooltip"]').tooltip();
 
 /*
     $(".carBottomLeft").mouseout(function(){
